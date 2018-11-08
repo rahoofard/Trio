@@ -2,6 +2,7 @@
 using namespace std;
 
 // <-- ADD YOUR FUNCTION PROTOTYPE HERE
+void swap(int &a, int &b, int &c);
 
 int main()
 {
@@ -13,7 +14,7 @@ int main()
 
 
   // <-- ADD YOUR FUNCTION CALL HERE
-
+swap(red, green, blue);
 
   //DO NOT CHANGE WITHIN THIS AREA...
   cout<<"Rearranged....\n";
@@ -21,5 +22,32 @@ int main()
   return 0;
   //...END OF "DO NOT CHANGE" AREA
 }
+void swap(int &a, int &b, int &c)
+{
+if(a>b && b>c){
+}else if(a>b && c>b && a>c){
+int temp = b;
+b = c;
+c = temp;
+}else if(b>a && a>c){
+int temp = b;
+b = a;
+a = temp;
+}else if(b>c && c>a){
+int temp = a;
+a = b;
+b = c;
+c = temp;
+}else if(c>a && a>b){
+int temp = a;
+a = c;
+b = temp;
+c = b;
+}else if(c>a && c>b && b>a){
+int temp = c;
+c = a;
+a = temp;
 
+}
+}
 // <-- ADD YOUR FUNCTION DEFINITON HERE
