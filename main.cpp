@@ -30,9 +30,9 @@ int temp = b;
 b = c;
 c = temp;
 }else if(b>a && a>c){
-int temp = b;
-b = a;
-a = temp;
+int temp = a;
+a = b;
+b = temp;
 }else if(b>c && c>a){
 int temp = a;
 a = b;
@@ -41,8 +41,8 @@ c = temp;
 }else if(c>a && a>b){
 int temp = a;
 a = c;
-b = temp;
 c = b;
+b = temp;
 }else if(c>a && c>b && b>a){
 int temp = c;
 c = a;
